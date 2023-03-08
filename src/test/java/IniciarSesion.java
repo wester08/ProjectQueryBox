@@ -27,7 +27,7 @@ public class IniciarSesion extends Localizadores {
         driver.findElement(CampoUsuario).sendKeys("401399");
         driver.findElement(CampoContrasena).sendKeys("401399");
         driver.findElement(BtnIngresar).click();
-        Thread.sleep(3000);
+        Thread.sleep(4000);
         driver.findElement(HomePage).isDisplayed();
 
 
