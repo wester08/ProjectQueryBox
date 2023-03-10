@@ -4,13 +4,13 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-public class CredencialesIncorrectas extends Localizadores {
+public class CredencialesIncorrectas extends Localizadores{
     private WebDriver driver;
 
     @BeforeClass
     public void beforeClass() throws Exception {
 
-        System.setProperty("webdriver.edge.driver", "C:\\Users\\wester.feliz\\Downloads\\Proyectos 02-11-2022\\QueryBox\\src\\main\\resources\\Driver\\msedgedriver.exe");
+        System.setProperty("webdriver.edge.driver", "C:\\Users\\wester.feliz\\Downloads\\Proyectos 02-11-2022\\QueryBox\\src\\test\\resources\\driver\\msedgedriver.exe");
         driver = new EdgeDriver();
         driver.manage().window().maximize();
         Thread.sleep(2000);

@@ -7,7 +7,4 @@ public class Localizadores {
     By BtnIngresar = By.xpath("/html/body/app-root/nb-layout-column/app-auth/div/div/div/form/div[3]/button");
     By HomePage = By.xpath("/html/body/app-root/nb-layout-column/app-home/nb-layout/div/div/nb-layout-header/nav/div/div/img");
     By MjsCredencialesIncorrectas = By.xpath("/html/body/app-root/nb-layout-column/app-auth/div/div/div/form/span[2]");
-
-    By DropdownSistema = By.name("sistema");
-
 }
