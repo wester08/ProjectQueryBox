@@ -6,10 +6,21 @@
       <class name="IniciarSesion">
         <methods>
           <include name="beforeClass"/>
-          <include name="login"/>
           <include name="afterClass"/>
+          <include name="Login"/>
         </methods>
       </class> <!-- IniciarSesion -->
     </classes>
   </test> <!-- Inicio de Sesion(failed) -->
+  <test thread-count="5" name="MB Informacion de Representantes(failed)">
+    <classes>
+      <class name="MbInformacionRepresentante">
+        <methods>
+          <include name="afterClass"/>
+          <include name="beforeClass"/>
+          <include name="InfoRep"/>
+        </methods>
+      </class> <!-- MbInformacionRepresentante -->
+    </classes>
+  </test> <!-- MB Informacion de Representantes(failed) -->
 </suite> <!-- Failed suite [All Test Suite] -->

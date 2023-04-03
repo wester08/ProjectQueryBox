@@ -13,4 +13,12 @@
             <class name="CredencialesIncorrectas"/>
         </classes>
     </test>
+    <test name="MB Informacion de Representantes">
+        <classes>
+            <class name="MbInformacionRepresentante"/>
+        </classes>
+    </test>
+
 </suite>
+
+

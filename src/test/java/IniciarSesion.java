@@ -2,11 +2,10 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
-//import io.qameta.allure.*;
 
-//import java.sql.Driver;
-
+@Listeners({ io.qameta.allure.testng.AllureTestNG.class })
 public class IniciarSesion extends Localizadores {
 
     private WebDriver driver;
@@ -21,13 +20,14 @@ public class IniciarSesion extends Localizadores {
 
     }
     @Test
-    public void login() throws InterruptedException {
+    public void Login_user() throws InterruptedException {
     Thread.sleep(1000);
         driver.findElement(EncabezadoPagina).isDisplayed();
+        Thread.sleep(3000);
         driver.findElement(CampoUsuario).sendKeys("401399");
         driver.findElement(CampoContrasena).sendKeys("401399");
         driver.findElement(BtnIngresar).click();
-       // Thread.sleep(10000);
+        Thread.sleep(6000);
         driver.findElement(HomePage).isDisplayed();
 
 

@@ -17,9 +17,14 @@ public class CredencialesIncorrectas extends Localizadores{
         driver.get("http://10.1.0.7:9402/");
 
     }
+    @AfterClass
+    public void afterClass() {
+        driver.quit();
+
+    }
 
     @Test
-    public void login() throws InterruptedException {
+    public void Login() throws InterruptedException {
         Thread.sleep(1000);
         driver.findElement(EncabezadoPagina).isDisplayed();
         driver.findElement(CampoUsuario).sendKeys("401399");
@@ -31,9 +36,5 @@ public class CredencialesIncorrectas extends Localizadores{
 
     }
 
-    @AfterClass
-    public void afterClass() {
-        driver.quit();
 
-    }
 }
